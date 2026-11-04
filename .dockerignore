@@ -1,0 +1,13 @@
+.git/
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+build/
+.claude/settings.local.json
+CLAUDE.local.md
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

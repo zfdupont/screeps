@@ -1,0 +1,29 @@
+{
+  "name": "screeps",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Screeps bot written in TypeScript",
+  "scripts": {
+    "build": "node esbuild.config.mjs",
+    "watch": "node esbuild.config.mjs --watch",
+    "deploy": "npm run build && node --env-file=.env scripts/deploy.mjs",
+    "typecheck": "tsc",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/screeps": "^3.4.0",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "prettier": "^3.9.10",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.1.0"
+  }
+}
